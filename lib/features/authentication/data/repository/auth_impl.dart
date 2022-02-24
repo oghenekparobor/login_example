@@ -1,13 +1,13 @@
 import 'package:dio/dio.dart';
-import 'package:kexze_logistics/core/failure/failure.dart';
 
 import 'package:dartz/dartz.dart';
-import 'package:kexze_logistics/core/network/network_info.dart';
-import 'package:kexze_logistics/features/authentication/data/datasource/local/auth_local.dart';
-import 'package:kexze_logistics/features/authentication/data/datasource/remote/auth_remote.dart';
-import 'package:kexze_logistics/features/authentication/data/model/state.dart';
 
+import '../../../../core/failure/failure.dart';
+import '../../../../core/network/network_info.dart';
 import '../../domain/repository/auth.dart';
+import '../datasource/local/auth_local.dart';
+import '../datasource/remote/auth_remote.dart';
+import '../model/state.dart';
 
 class AuthRepositoryImpl implements AuthRepository {
   AuthRepositoryImpl({

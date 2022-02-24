@@ -1,8 +1,6 @@
 import 'package:dartz/dartz.dart';
-import 'package:flutter/material.dart';
-import 'package:kexze_logistics/core/usecases/usecases.dart';
-import 'package:kexze_logistics/features/authentication/domain/repository/auth.dart';
-
+import '../../../../core/usecases/usecases.dart';
+import '../repository/auth.dart';
 import '../../../../core/failure/failure.dart';
 
 class LoginUsecase extends Usecase<void, Map> {

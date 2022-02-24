@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:intl_phone_number_input/intl_phone_number_input.dart';
-import 'package:kexze_logistics/config/routes/route.dart';
-import 'package:kexze_logistics/config/routes/route_config.dart';
-import 'package:kexze_logistics/core/assets/assets.dart';
-import 'package:kexze_logistics/features/authentication/data/model/user.dart';
-import 'package:kexze_logistics/features/authentication/presentation/change-notifier/auth_notifier.dart';
-import 'package:permission_handler/permission_handler.dart';
 import 'package:provider/provider.dart';
 import 'package:shake_widget/controller.dart';
 import 'package:shake_widget/shake_widget.dart';
+
+import '../../../../config/routes/route.dart';
+import '../../../../config/routes/route_config.dart';
+import '../../../../core/assets/assets.dart';
+import '../../data/model/user.dart';
+import '../change-notifier/auth_notifier.dart';
 
 enum Gender { male, female }
 

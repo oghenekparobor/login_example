@@ -1,13 +1,11 @@
 import 'package:fluro/fluro.dart';
 import 'package:flutter/widgets.dart';
-import 'package:kexze_logistics/features/authentication/presentation/views/create_account.dart';
-import 'package:kexze_logistics/features/authentication/presentation/views/finish_account.dart';
-import 'package:kexze_logistics/features/authentication/presentation/views/log_in.dart';
-import 'package:kexze_logistics/features/dashboard/presentation/views/home.dart';
-import 'package:kexze_logistics/features/dashboard/presentation/views/riding.dart';
-import 'package:kexze_logistics/features/dashboard/presentation/views/start_ride.dart';
 
+import '../../features/authentication/presentation/views/create_account.dart';
+import '../../features/authentication/presentation/views/finish_account.dart';
+import '../../features/authentication/presentation/views/log_in.dart';
 import '../../features/authentication/presentation/views/splash.dart';
+import '../../features/dashboard/presentation/views/home.dart';
 
 var rootHandler = Handler(
     handlerFunc: (BuildContext? context, Map<String, List<String>> params) {
@@ -34,16 +32,3 @@ var homeDashboardHandler = Handler(
   return const DashboardHome();
 });
 
-var startRideHandler = Handler(
-    handlerFunc: (BuildContext? context, Map<String, List<String>> params) {
-  var data = context!.settings!.arguments as String;
-
-  return  StartRide(data: data);
-});
-
-var ridingHandler = Handler(
-    handlerFunc: (BuildContext? context, Map<String, List<String>> params) {
-  var data = context!.settings!.arguments as String;
-
-  return  Riding(data: data);
-});

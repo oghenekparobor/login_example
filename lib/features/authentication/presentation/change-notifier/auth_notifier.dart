@@ -1,17 +1,16 @@
 import 'package:bot_toast/bot_toast.dart';
 import 'package:dartz/dartz.dart';
 import 'package:flutter/material.dart';
-import 'package:kexze_logistics/core/failure/failure.dart';
-import 'package:kexze_logistics/core/usecases/usecases.dart';
-import 'package:kexze_logistics/features/authentication/data/model/state.dart';
-import 'package:kexze_logistics/features/authentication/domain/usecases/create.dart';
-import 'package:kexze_logistics/features/authentication/domain/usecases/is_logged.dart';
-import 'package:kexze_logistics/features/authentication/domain/usecases/location.dart';
-import 'package:kexze_logistics/features/authentication/domain/usecases/login.dart';
-import 'package:kexze_logistics/features/authentication/domain/usecases/logout.dart';
-import 'package:kexze_logistics/features/authentication/domain/usecases/state.dart';
-
+import '../../../../core/failure/failure.dart';
+import '../../../../core/usecases/usecases.dart';
+import '../../data/model/state.dart';
 import '../../data/model/user.dart';
+import '../../domain/usecases/create.dart';
+import '../../domain/usecases/is_logged.dart';
+import '../../domain/usecases/location.dart';
+import '../../domain/usecases/login.dart';
+import '../../domain/usecases/logout.dart';
+import '../../domain/usecases/state.dart';
 
 class AuthNotifier with ChangeNotifier {
   AuthNotifier({

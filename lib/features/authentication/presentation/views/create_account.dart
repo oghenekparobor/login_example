@@ -3,12 +3,12 @@ import 'dart:io';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:intl_phone_number_input/intl_phone_number_input.dart';
-import 'package:kexze_logistics/config/routes/route.dart';
-import 'package:kexze_logistics/config/routes/route_config.dart';
-import 'package:kexze_logistics/core/assets/assets.dart';
-import 'package:kexze_logistics/features/authentication/data/model/user.dart';
-import 'package:kexze_logistics/features/authentication/presentation/change-notifier/auth_notifier.dart';
 import 'package:provider/provider.dart';
+
+import '../../../../config/routes/route.dart';
+import '../../../../config/routes/route_config.dart';
+import '../../data/model/user.dart';
+import '../change-notifier/auth_notifier.dart';
 
 enum Gender { male, female }
 
@@ -111,9 +111,13 @@ class _CreateAccountState extends State<CreateAccount> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
-                  Padding(
-                    padding: const EdgeInsets.all(15.0),
-                    child: Image.asset(kLOGO, height: 60),
+                  const Padding(
+                    padding: EdgeInsets.all(15.0),
+                    child: SizedBox(
+                      height: 50,
+                      width: 70,
+                      child: Placeholder(),
+                    ),
                   ),
                   const SizedBox(height: 15),
                   Text(

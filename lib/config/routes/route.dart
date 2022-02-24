@@ -8,8 +8,6 @@ class Routes {
   static String create = '/createAccount';
   static String finish = '/finishaccount';
   static String dashboard = '/dashboardHome';
-  static String startRide = '/starride';
-  static String riding = '/riding';
 
   static void configureRoutes(FluroRouter router) {
     router.notFoundHandler = Handler(
@@ -26,7 +24,5 @@ class Routes {
     router.define(create, handler: createAcctHandler);
     router.define(finish, handler: finishAcctHandler);
     router.define(dashboard, handler: homeDashboardHandler);
-    router.define(startRide, handler: startRideHandler);
-    router.define(riding, handler: ridingHandler);
   }
 }

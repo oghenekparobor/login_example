@@ -1,5 +1,4 @@
-
-const String kTOKEN = 'KEZXE_TOKEN_KEY';
-const String kUSER = 'KEZXE_USER_KEY';
-const String kCURRENTORDER = 'KEZXE_CUARREN_KEY';
-const String kBASEURL = 'https://api.kexzegroup.com/api/v1/logistics';
+const String kTOKEN = 'EXAMPLE_TOKEN_KEY';
+const String kUSER = 'EXAMPLE_USER_KEY';
+const String kCURRENTORDER = 'EXAMPLE_CUARREN_KEY';
+const String kBASEURL = 'your base url goes here';

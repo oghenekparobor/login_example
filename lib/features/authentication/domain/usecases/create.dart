@@ -1,8 +1,8 @@
 import 'package:dartz/dartz.dart';
-import 'package:kexze_logistics/core/usecases/usecases.dart';
-import 'package:kexze_logistics/features/authentication/domain/repository/auth.dart';
 
 import '../../../../core/failure/failure.dart';
+import '../../../../core/usecases/usecases.dart';
+import '../repository/auth.dart';
 
 class CreateAccountUsecase extends Usecase<void, Map> {
   CreateAccountUsecase({

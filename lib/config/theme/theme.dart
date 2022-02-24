@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 ThemeData theme(BuildContext context) => ThemeData(
-      primaryColor: const Color.fromRGBO(235, 87, 87, 1),
+      primaryColor: Colors.brown,
       colorScheme: Theme.of(context).colorScheme.copyWith(
-            secondary: const Color.fromRGBO(235, 87, 87, 1),
+            secondary: Colors.amber,
           ),
       scaffoldBackgroundColor: Colors.grey.shade100,
       textTheme: TextTheme(

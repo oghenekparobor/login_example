@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:kexze_logistics/config/routes/route.dart';
-import 'package:kexze_logistics/config/routes/route_config.dart';
-import 'package:kexze_logistics/core/assets/assets.dart';
-import 'package:kexze_logistics/features/authentication/data/model/user.dart';
-import 'package:kexze_logistics/features/authentication/presentation/change-notifier/auth_notifier.dart';
 import 'package:provider/provider.dart';
 
+import '../../../../config/routes/route.dart';
+import '../../../../config/routes/route_config.dart';
+import '../../../../core/assets/assets.dart';
+import '../../data/model/user.dart';
+import '../change-notifier/auth_notifier.dart';
 import '../widgets/links.dart';
 
 class LogIn extends StatefulWidget {
@@ -55,13 +55,17 @@ class _LogInState extends State<LogIn> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
-                  Padding(
-                    padding: const EdgeInsets.all(15.0),
-                    child: Image.asset(kLOGO, height: 60),
+                  const Padding(
+                    padding: EdgeInsets.all(15.0),
+                    child: SizedBox(
+                      height: 50,
+                      width: 70,
+                      child: Placeholder(),
+                    ),
                   ),
                   const SizedBox(height: 15),
                   Text(
-                    'Login To Your Rider Account',
+                    'Login',
                     style: Theme.of(context).textTheme.headline1,
                   ),
                   const SizedBox(height: 30),
@@ -137,7 +141,7 @@ class _LogInState extends State<LogIn> {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      const Text('New to Kaxze'),
+                      const Text('New ?'),
                       const SizedBox(width: 13),
                       GestureDetector(
                         onTap: _isLoading

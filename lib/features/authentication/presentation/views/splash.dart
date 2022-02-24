@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:kexze_logistics/config/routes/route.dart';
-import 'package:kexze_logistics/config/routes/route_config.dart';
-import 'package:kexze_logistics/core/assets/assets.dart';
-import 'package:kexze_logistics/features/authentication/presentation/change-notifier/auth_notifier.dart';
 import 'package:provider/provider.dart';
+
+import '../../../../config/routes/route.dart';
+import '../../../../config/routes/route_config.dart';
+import '../change-notifier/auth_notifier.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({Key? key}) : super(key: key);
@@ -41,9 +41,13 @@ class _SplashScreenState extends State<SplashScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return const Scaffold(
       body: Center(
-        child: Image.asset(kLOGO),
+        child: SizedBox(
+          height: 100,
+          width: 100,
+          child: Placeholder(),
+        ),
       ),
     );
   }

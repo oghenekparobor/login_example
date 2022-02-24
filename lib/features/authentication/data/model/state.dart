@@ -1,4 +1,4 @@
-import 'package:kexze_logistics/features/authentication/domain/entity/state.dart';
+import '../../domain/entity/state.dart';
 
 class StateModel extends StateEntity {
   StateModel({

@@ -1,6 +1,7 @@
 import 'package:dartz/dartz.dart';
-import 'package:kexze_logistics/core/failure/failure.dart';
-import 'package:kexze_logistics/features/authentication/data/model/state.dart';
+
+import '../../../../core/failure/failure.dart';
+import '../../data/model/state.dart';
 
 abstract class AuthRepository {
   Future<Either<Failure, void>> login(Map map);
